@@ -5,7 +5,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from "react-alice-carousel";
 
 const Hourly = ({ hourly }) => {
-  console.log(hourly);
   return (
     <>
       <div className="Hourly">
