@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
-import moment from "moment";
-import kelvinToCelsius from "kelvin-to-celsius";
-import { Route, Switch, Link } from "react-router-dom";
-import Hourly from "./Hourly";
+// import Hourly from "./Hourly";
 import Weather from "./Weather";
 import Today from "./Today";
 const App = () => {
@@ -43,15 +40,6 @@ const App = () => {
         {/* <Hourly hourly={hourly} /> */}
         <Weather weather={weather} />
       </div>
-
-      {/* <Switch> */}
-      {/* <Route
-          path="/:day"
-          render={props => <Hourly {...props} data={hourly} />}
-        /> */}
-      {/* < */}
-      {/* <Weather weather={weather} />
-      </Switch> */}
     </>
   );
 };
