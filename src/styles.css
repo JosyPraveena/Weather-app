@@ -5,7 +5,7 @@
 }
 
 html {
-  background-image: url(../images/weather.jpg);
+  background-image: url("https://openweathermap.org/themes/openweathermap/assets/img/new-history-forecast-bulk.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13,6 +13,9 @@ html {
 .weather img {
   width: 100px;
   height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Weather h4 {
   display: flex;
@@ -43,6 +46,9 @@ html {
 .current img {
   width: 70px;
   height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #description {
