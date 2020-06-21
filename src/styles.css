@@ -5,7 +5,7 @@
 }
 
 html {
-  background-image: url("https://openweathermap.org/themes/openweathermap/assets/img/new-history-forecast-bulk.png");
+  background-image: url(../images/weather.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
