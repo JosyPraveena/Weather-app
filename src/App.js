@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
+
 import "./styles.css";
 // import Hourly from "./Hourly";
 import Weather from "./Weather";
 import Today from "./Today";
+require("dotenv").config();
+
 const App = () => {
   const [current, setCurrent] = useState(null);
   const [weather, setWeather] = useState([]);
@@ -20,7 +23,9 @@ const App = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       fetch(
-        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=ee72c57929fea298dc920a087fbecfda`
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${
+          process.env.REACT_APP_API_KEY
+        }`
       )
         .then(response => response.json())
         .then(result => {
